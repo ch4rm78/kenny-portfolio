@@ -52,10 +52,10 @@ const About = () => {
                     <h3 className='text-xl font-bold mb-4'>Education</h3>
                     <ul className="list-disc list-inside text-gray-300 space-y-2">
                         <li className="">
-                            <strong>B.Sc Scoftware Engineering</strong> - Veritas University (2021-2025)
+                            <strong>B.Sc Software Engineering</strong> - Veritas University (4.14/5.0 CGPA)
                         </li>
                         <li>
-                            Relevant Coursework: User Experience Design and Evaluation,
+                            <strong>Relevant Coursework:</strong> User Experience Design and Evaluation,
                             Introduction to Web Technologies, Web Application Development, Datbase Systems,Data Structures and Algorithms,
                             Soware Testing & Quality Assurance
                         </li>
@@ -65,13 +65,13 @@ const About = () => {
                     <h3 className='text-xl font-bold mb-4'>Work Experience</h3>
                     <div className="space-y-4 text-gray-300">
                         <div>
-                            <h4 className='font-semibold'>Head Of IT Operations at Ages 'n' Stages 2020 - 2022</h4>
+                            <h4 className='font-semibold'>Head Of IT Operations at Ages 'n' Stages Feb 2020 - Jun 2022</h4>
                             <p>Managed and optimized IT operations for the e-commerce platform, ensuring seamless customer experiences and
                                 efficient operations.
                             </p>
                         </div>
                         <div>
-                            <h4 className='font-semibold'>Quality Assurance Engineer (Intern) at Hasob Integrated Services 2023 - 2023</h4>
+                            <h4 className='font-semibold'>Quality Assurance Engineer (Intern) at Hasob Integrated Services Jul 2023 - Oct 2023</h4>
                             <p>Worked on the developing, testing and reviewing software to ensure functionality, usability, and overall quality before release.
                             </p>
                         </div>
