@@ -54,11 +54,9 @@ const About = () => {
                         <li className="">
                             <strong>B.Sc Software Engineering</strong> - Veritas University (4.14/5.0 CGPA)
                         </li>
-                        <li>
                             <strong>Relevant Coursework:</strong> User Experience Design and Evaluation,
                             Introduction to Web Technologies, Web Application Development, Datbase Systems,Data Structures and Algorithms,
                             Soware Testing & Quality Assurance
-                        </li>
                     </ul>
                 </div>
                 <div className="p-6 rounded-xl border-white/10 broder hover:-translate-y-1 transition-all">
