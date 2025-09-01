@@ -8,7 +8,7 @@ import NotFound from './components/section/NotFound';
 import LoadingScreen from "@/LoadingScreen.jsx"
 import Navbar from '@/Navbar.jsx';
 import MobileMenu from './components/MobileMenu';
-
+import  Modal from '@/Modal.jsx';
 
 
 
@@ -16,6 +16,7 @@ import MobileMenu from './components/MobileMenu';
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
 
   return (
     <>

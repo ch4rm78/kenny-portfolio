@@ -2,6 +2,7 @@ import React from 'react'
 import RevealOnScroll from '../RevealOnScroll'
 import {useState} from 'react'
 import emailjs from 'emailjs-com'
+import Modal from '../modal.jsx'
 
 
 const Contact = () => {
@@ -10,28 +11,37 @@ const Contact = () => {
     email: '',
     message: ''
   })
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const service_id = import.meta.env.VITE_SERVICE_ID;
   const template_id = import.meta.env.VITE_TEMPLATE_ID;
   const public_key = import.meta.env.VITE_PUBLIC_KEY;
+
+  
+  const openModal = () => {
+    setIsModalOpen(true)
+  }
+  
+  const closeModal = () => {
+    setIsModalOpen(false)
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
 
     try{
       await emailjs.sendForm(service_id, template_id, e.target, public_key)
-      alert("Message Sent!");
       setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
+        name: '',
+        email: '',
+        message: ''
+      });
+      openModal();
     }
-    catch{
+    catch(error){
+      console.error("Error sending email:", error);
       alert(`There was an error sending your message`);
     }
-    
-    
   }
 
   return (
@@ -77,6 +87,7 @@ const Contact = () => {
               </div>
               <button type='submit' className='w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition
                                               relative overflow-hidden hover:translate-y-0.5 cursor-pointer hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]'>Send Message</button>
+              <Modal open={isModalOpen} onClose={closeModal} />
             </form>
         </div>
       </RevealOnScroll>
