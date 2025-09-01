@@ -76,8 +76,9 @@ const Projects = () => {
 
            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
             <h3 className='text-xl font-bold mb-2'>Job Seekers Platform</h3>
-            <p className='text-gray-400 mb-4'>A job seekers platform that connects candidates with potential employers, 
-              making it easier to discover opportunities and build meaningful career connections.</p>
+            <p className='text-gray-400 mb-4'>A job seekers platform that bridges the gap between candidates and employers by providing a simple and effective way to connect. 
+              It enables job seekers to showcase their skills, discover opportunities tailored to their profiles, 
+              and directly engage with potential employers, while also giving organizations access to qualified talent.</p>
             <div className='flex flex-wrap gap-2 mb-4'>
               {['React Js', 'Supabase', "Tailwind", "Node.js"].map((tech, key) => (
                 <span key={key} className="bg-blue-500/10 text-blue-500 px-2 py-1 rounded-full text-sm hover:bg-blue-500/20
