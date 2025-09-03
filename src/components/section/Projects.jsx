@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaGithub} from 'react-icons/fa'
+import {FaEye} from 'react-icons/fa'
 import RevealOnScroll from '../RevealOnScroll'
 
 
@@ -26,12 +27,15 @@ const Projects = () => {
               ))}
             </div>
 
-            <div className=''>
+            <div className='flex justify-between items-center'>
               <a href="https://github.com/ch4rm78/Browser-Extension-for-detecting-phishing-attacks-using-LLMs">
-                <FaGithub className='w-10 h-10 mt-3'/>
+                <FaGithub className='w-10 h-10 mt-3'/><br />
+                <h3 className='font-bold'>Github</h3>
               </a>
             </div>
 
+
+              {/* web scraper */}
           </div>
           <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
             <h3 className='text-xl font-bold mb-2'>Web Crawler</h3>
@@ -49,11 +53,13 @@ const Projects = () => {
 
             <div className='flex justify-between items-center'>
               <a href="https://github.com/ch4rm78/python-web-crawler">
-                <FaGithub className='w-10 h-10 mt-3'/>
+                <FaGithub className='w-10 h-10 mt-3'/><br />
+                <h3 className='font-bold'>Github</h3>
               </a>
             </div>
           </div>
-
+          
+          {/* Robotic arm */}
           <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
             <h3 className='text-xl font-bold mb-2'>Color Sorting Robotic Arm</h3>
             <p className='text-gray-400 mb-4'>A robotic arm system powered by machine learning that identifies and sorts items based on their colors. Using sensors and a camera for detection, 
@@ -69,8 +75,35 @@ const Projects = () => {
 
             <div className='flex justify-between items-center'>
               <a href="https://github.com/ch4rm78/3dof-Robotic-arm-to-sort-items-based-on-color">
-                <FaGithub className='w-10 h-10 mt-3'/>
+                <FaGithub className='w-10 h-10 mt-3'/><br />
+                <h3 className='font-bold'>Github</h3>
               </a>
+            </div>
+          </div>
+
+           <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+            <h3 className='text-xl font-bold mb-2'>A Movie Search App</h3>
+            <p className='text-gray-400 mb-4'>A sleek, responsive React application that leverages the TMDB API to help users discover and search for movies. 
+              Built with modern React practices and Vite for optimal performance.</p>
+            <div className='flex flex-wrap gap-2 mb-4'>
+              {['React Js', 'API', "Tailwind", "Node.js"].map((tech, key) => (
+                <span key={key} className="bg-blue-500/10 text-blue-500 px-2 py-1 rounded-full text-sm hover:bg-blue-500/20
+                                                            hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            <div className='flex justify-between'>
+              <a href="https://github.com/ch4rm78/discover-movies">
+                <FaGithub className='w-10 h-10 mt-3'/><br />
+              <h3 className='font-bold'>Github</h3>
+              </a>
+              <a className="" href="https://ch4rm78.github.io/discover-movies">
+                <FaEye className='ml-2.5 w-10 h-10 mt-3'/><br />
+                <h3 className='font-bold'>Preview</h3>
+              </a>
+
             </div>
           </div>
 
